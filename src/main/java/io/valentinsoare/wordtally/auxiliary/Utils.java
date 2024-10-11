@@ -64,8 +64,10 @@ public class Utils {
                 System.err.printf("%s %n", outputFormat.withJSONStyle().writeValueAsString(msg));
             } catch (JsonProcessingException ex) {
                 System.err.printf("%n\033[1;31m%s - class: %s, method: %s, %s\0330m%n",
-                        Severity.FATAL, Utils.class.getClass().getName(), "isBinaryFile", ex.getMessage());
+                        Severity.FATAL, Utils.class.getName(), "isBinaryFile", ex.getMessage());
             }
+
+            System.exit(0);
         }
 
         return false;

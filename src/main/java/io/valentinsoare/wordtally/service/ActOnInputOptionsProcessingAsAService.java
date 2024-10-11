@@ -200,16 +200,15 @@ public class ActOnInputOptionsProcessingAsAService implements InputOptionsAsArgu
      * @param fileToPrint The name of the file these results correspond to.
      */
     private void constructOutputToPrint(List<Long> results, String fileToPrint) {
-        System.out.printf("%s", " ".repeat(5));
-
         for (long value : results) {
             if (value >= 0) {
-                System.out.printf("%-13s", value);
+                System.out.printf("%13s", value);
             }
         }
 
         if (fileToPrint != null) {
-            System.out.printf("%-10s%n", fileToPrint);
+            System.out.printf("%s", " ".repeat(3));
+            System.out.printf("%s%n", fileToPrint);
         } else {
             System.out.println();
         }
@@ -240,17 +239,16 @@ public class ActOnInputOptionsProcessingAsAService implements InputOptionsAsArgu
 
         boolean toPrintTotalTag = false;
 
-        System.out.printf("%s", " ".repeat(5));
-
         for (long value : calcTotal) {
             if (value >= 0) {
                 toPrintTotalTag = true;
-                System.out.printf("%-13s", value);
+                System.out.printf("%13s", value);
             }
         }
 
         if (toPrintTotalTag) {
-            System.out.printf("%-10s%n", "total");
+            System.out.printf("%s", " ".repeat(3));
+            System.out.printf("%s%n", "total");
         }
     }
 
