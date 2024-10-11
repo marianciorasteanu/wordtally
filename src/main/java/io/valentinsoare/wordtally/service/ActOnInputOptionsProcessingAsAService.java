@@ -301,11 +301,11 @@ public class ActOnInputOptionsProcessingAsAService implements InputOptionsAsArgu
                 calculateTotalIfMultipleFilesAndPrint(new ArrayList<>(rs.values()),options.isEmpty() ? 3 : options.size());
             }
         } else {
-            options.forEach(e -> {
-                if ("help".equals(e)) {
+            for (String s : options) {
+                if ("help".equals(s)) {
                     printHelp(requiredOptions);
                 }
-            });
+            }
 
             catchCheckTheReaderException(inputStream);
 
