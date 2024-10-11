@@ -301,10 +301,8 @@ public class ActOnInputOptionsProcessingAsAService implements InputOptionsAsArgu
                 calculateTotalIfMultipleFilesAndPrint(new ArrayList<>(rs.values()),options.isEmpty() ? 3 : options.size());
             }
         } else {
-            for (String s : options) {
-                if ("help".equals(s)) {
-                    printHelp(requiredOptions);
-                }
+            if (options.contains("help")) {
+                printHelp(requiredOptions);
             }
 
             catchCheckTheReaderException(inputStream);
