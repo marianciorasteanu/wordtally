@@ -1,7 +1,7 @@
 ## :abc: WordTally - Build Your Own wc Tool Coding Challenge
 > https://codingchallenges.fyi/challenges/challenge-wc/
 
-<!--- [![wordtally - Unix wc tool replica](https://img.shields.io/static/v1?label=wordtally&message=Unix+wc+tool+replica&color=2ea44f)](https://github.com/valentinsoare) --->
+[![wordtally - Unix wc tool replica](https://img.shields.io/static/v1?label=wordtally&message=Unix+wc+tool+replica&color=2ea44f)](https://github.com/valentinsoare)
 
 <br>
 
@@ -17,7 +17,7 @@ will be read from the stdin file descriptor of the process id of wordtally
 
 <br>
 
-[![final-Small.png](https://i.postimg.cc/DfLpz7ky/final-Small.png)](https://moviesondemand.io)
+<!--- [![final-Small.png](https://i.postimg.cc/DfLpz7ky/final-Small.png)](https://moviesondemand.io) --->
 
 ### Concepts/technologies used:
 1. [X] Object-Oriented Programming Principles;
